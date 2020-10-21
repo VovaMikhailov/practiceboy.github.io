@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Адаптивная вёрстка сайта</title>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="Верстка сайта.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+<body>
+	<header>
+    <nav class="container">
+      <a class="logo" href="">
+        <span>A</span>
+        <span>N</span>
+        <span>I</span>
+        <span>M</span>
+        <span>E</span>
+      </a>
+      <div class="nav-toggle"><span></span></div>
+      <form action="" method="get" id="searchform">
+        <input type="text" placeholder="Поиск...">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+      <ul id="menu">
+        <li><a href="">Главная </a></li>
+        <li><a href="">Контакты</a></li>
+        <li><a href="">Правообладателям	</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+  <div class="posts-list">
+    <article id="post-1" class="post">
+      <div class="post-image"><a href=""><img src="Клинок 1.jpg"></a></div>
+      <div class="post-content">
+        <div class="category"><a href="">Клинок рассекающий демонов</a></div>
+        <h2 class="post-title">Описание</h2>
+        <p>В эпоху Тайсё произошла история, ставшая подтверждением подлинности легенд. Читать далее...</p>
+        <div class="post-footer">
+          <a class="more-link" href="">Продолжить чтение</a>
+        </div>
+      </div>
+    </article>
+    <article id="post-2" class="post">
+    </article>
+  </div> <!-- конец div class="posts-list"-->
+  <aside>
+  <div class="widget">
+    <h3 class="widget-title">Категории</h3>
+    <ul class="widget-category-list">
+      <li><a href="">Год</a> (36)</li>
+      <li><a href="">Жанр</a> (27)</li>
+      <li><a href="">Анонсы</a> (7)</li>
+    </ul>
+  </div>
+  <div class="widget">
+    <h3 class="widget-title">Последние новости</h3>
+    <ul class="widget-posts-list">
+      <li>
+        <div class="post-image-small">
+          <a href=""><img src="Твое имя.jpg"></a>
+        </div>
+        <h4 class="widget-post-title">Твое Имя </h4>
+      </li>
+      <li>
+        <div class="post-image-small">
+          <a href=""><img src="22.jpg"></a>
+        </div>
+        <h4 class="widget-post-title">Бог Обмана</h4>
+      </li>
+      <li>
+        <div class="post-image-small">
+          <a href=""><img src="1234.jpg"></a>
+        </div>
+        <h4 class="widget-post-title">Как я и ожидал, моя школьная жизнь не задалась<h4>
+      </li>
+    </ul>
+  </div>
+</aside>
+</div> <!-- конец div class="container"-->
+<footer>
+  <div class="container">
+    <div class="footer-col"><span>Мой блог © 2016</span></div>
+    <div class="footer-col">
+      <div class="social-bar-wrap">
+        <a title="Facebook" href="" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a title="Twitter" href="" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a title="Pinterest" href="" target="_blank"><i class="fa fa-pinterest"></i></a>
+        <a title="Instagram" href="" target="_blank"><i class="fa fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <a href="fedorov.dulustan167@mail.ru">Написать письмо</a>
+    </div>
+  </div>
+</footer>
+<script>
+$('.nav-toggle').on('click', function(){
+$('#menu').toggleClass('active');
+});
+</script>
+</body>
+</html>
